@@ -22,7 +22,7 @@ int main()
         }
 
         // Numeric pattern 2 reverse counting
-        int start = 2 * row; // starting reverse counting from here and decrease start later
+        int start = 2 * row; // starting reverse counting from here and decrease start by 1 later
         for (int col = 0; col < row; col = col + 1)
         {
             cout << start << " ";
