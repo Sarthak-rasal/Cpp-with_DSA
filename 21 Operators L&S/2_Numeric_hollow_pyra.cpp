@@ -21,6 +21,7 @@ int main()
         int start = 1;
         // using col instead of rows because we need the rows for loop only once for the rows
         for (int col = 0; col < 2 * row + 1; col = col + 1)
+        // Blueprint made Now we look into what to print
         {
 
             // for first and last rows
@@ -30,6 +31,9 @@ int main()
 
                 if (col % 2 == 0)
                 {
+                    // We have to start printing form 1 so lets create a
+                    // variable that starts from 1 and counts up
+                    // you should declare a variable outside the for loop
                     cout << start;
                     start = start + 1;
                 }
@@ -41,7 +45,21 @@ int main()
             }
             else
             {
-                cout << "*";
+                // first col
+                if (col == 0)
+                {
+                    cout << 1;
+                }
+                // last col was 2*row +1 so we used 2 * row +1-1
+                else if (col == 2 * row)
+                {
+                    cout << row + 1;
+                }
+                else
+                {
+                    // middle is filled with spaces
+                    cout << " ";
+                }
             }
         }
         cout << endl;
