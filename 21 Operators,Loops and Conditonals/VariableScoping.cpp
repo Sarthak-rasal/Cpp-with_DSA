@@ -2,6 +2,7 @@
 using namespace std;
 
 int GlobalVariable = 777;
+// It is considered a bad practice
 
 int main()
 {
