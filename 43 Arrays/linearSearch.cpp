@@ -33,5 +33,32 @@ int main()
         cout << "Key not found";
     }
 
+    // without using functions
+
+    cout << "Array 2 :";
+
+    int ara[] = {1, 2, 3, 4, 5, 6, 7, 8};
+    int size2 = 8;
+
+    bool flag = 0;
+
+    cout << "Which element do you want to find from 1 to 8 :" << endl;
+    int key2;
+    cin >> key2;
+
+    for (int i = 0; i < size2; i++)
+    {
+        if (ara[i] == key)
+        {
+            // found
+            flag = 1;
+        }
+    }
+    if (flag)
+        cout << "Found" << endl;
+
+    else
+        cout << "Not found" << endl;
+
     return 0;
 }
