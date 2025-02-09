@@ -31,4 +31,6 @@ int main()
     {
         cout << value << " ";
     }
+
+    cout << endl;
 }
