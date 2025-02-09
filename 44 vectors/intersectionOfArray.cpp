@@ -21,6 +21,10 @@ int main()
         {
             if (element == brr[j])
             {
+                // marking the element to avoid duplication
+                // we modify the second array itself if we get same elements(eg; if we get a set of 3 we change 3 in the bellow array to -1 so if we run
+                // loop on first array and 3 occurs again we wont find 3 in the second array as we have changed its value to -1 last time)
+                brr[j] = -1;
                 ans.push_back(element);
             }
         }
