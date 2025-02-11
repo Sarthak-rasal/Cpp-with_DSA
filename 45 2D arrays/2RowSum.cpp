@@ -17,7 +17,7 @@ void printRowWiseSum(int arr[][3], int rows, int cols)
             sum = sum + arr[i][j];
         }
         // cout statement will be here because we have to print sum for each row and then
-        //  move on to the next row where sum again becomes 0 and we print sum again.
+        // move on to the next row where sum again becomes 0 and we print sum again.
         cout << sum << endl;
     }
 }
