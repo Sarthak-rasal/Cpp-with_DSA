@@ -49,5 +49,36 @@ int main()
         cout << endl;
     }
 
+    int crr[3][3];
+    int rows = 3;
+    int cols = 3;
+
+    // taking inputs in crr
+
+    cout << "Enter the elements to put in a 2D array ";
+
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++)
+        {
+            cin >> crr[i][j];
+        }
+    }
+
+    // printing row-wise
+    // outer loop
+    cout << "printing array crr :";
+    cout << endl;
+    for (int i = 0; i < 3; i++)
+    {
+
+        // inner loop
+        for (int j = 0; j < 3; j++)
+        {
+            cout << crr[i][j] << " ";
+        }
+        cout << endl;
+    }
+
     return 0;
 }
