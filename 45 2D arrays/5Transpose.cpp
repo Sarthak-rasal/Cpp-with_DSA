@@ -45,5 +45,6 @@ int main()
     // making new array
     int transposeArr[3][3];
     transpose(brr, rows, cols, transposeArr);
+
     PrintArry(transposeArr, rows, cols);
 }
