@@ -5,7 +5,6 @@ int main()
 {
     int rowCount, columnCount;
     cout << "enter number of row :";
-    ;
     cin >> rowCount;
     cout << "enter number of columns :";
     cin >> columnCount;
