@@ -5,9 +5,10 @@ using namespace std;
 
 int main()
 {
+
     vector<vector<int>> arr;
 
-    // outer vector will always push vector<int> type of data
+    // outer vector will always push(work with) vector<int> type of data
 
     vector<int> a{1, 2, 3};
     vector<int> b{2, 3, 4, 5};
@@ -46,6 +47,5 @@ int main()
         }
         cout << endl;
     }
-
     return 0;
 }

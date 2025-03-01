@@ -9,11 +9,11 @@ void moveAllNegToLeft(vector<int> &arr, int n)
 
     int l = 0, h = n - 1;
 
-    // if there is a negative at low
-    // as we want negative at low we will move forward
     while (l < h)
     {
 
+        // if there is a negative at low
+        // as we want negative at low we will move forward
         if (arr[l] < 0)
         {
             l++;

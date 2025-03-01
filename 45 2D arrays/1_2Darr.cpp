@@ -25,6 +25,7 @@ int main()
     cout << endl;
     for (int i = 0; i < 3; i++)
     {
+        // for every row we need to print value in each column
 
         // inner loop
         for (int j = 0; j < 3; j++)
