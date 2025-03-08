@@ -19,6 +19,8 @@ int main()
         cout << " Not found" << endl;
     }
 
+    // array = base address , last address , toFind
+
     if (binary_search(arr, arr + size, 3))
     {
         cout << "Found" << endl;
