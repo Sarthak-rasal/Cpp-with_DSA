@@ -45,7 +45,7 @@ int main()
 
     int indexOfFirstOcc = firstOcc(v, target);
 
-    cout << "Ans is " << indexOfFirstOcc << endl;
+    cout << "First occurrence is at " << indexOfFirstOcc << endl;
 
     return 0;
 }
