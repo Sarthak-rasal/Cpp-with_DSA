@@ -41,15 +41,22 @@ using namespace std;
 
 int main()
 {
-    vector<int> v{1, 3, 4, 4, 4, 4, 6, 8};
+    vector<int> v{1, 3, 4, 4, 4, 4, 4, 6, 8};
     int target = 4;
 
     int indexOfFirstOcc = firstOcc(v, target);
 
     cout << "First occurrence is at " << indexOfFirstOcc << endl;
     // Using STLs
-    auto ans2 = lower_bound(v.begin(), v.end(), target);
-    cout << " Ans 2 is " << ans2 - v.begin() << endl;
+    auto firstOc = lower_bound(v.begin(), v.end(), target);
+    cout << " Ans 2 is " << firstOc - v.begin() << endl;
+
+    auto lastOcc = upper_bound(v.begin(), v.end(), target);
+    cout << " Ans 2 is " << lastOcc - v.begin() << endl;
+
+    int totalOcc = lastOcc - firstOc;
+
+    cout << " Total Occurrences are : " << totalOcc << endl;
 
     return 0;
 }
