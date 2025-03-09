@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -46,6 +47,9 @@ int main()
     int indexOfFirstOcc = firstOcc(v, target);
 
     cout << "First occurrence is at " << indexOfFirstOcc << endl;
+    // Using STLs
+    auto ans2 = lower_bound(v.begin(), v.end(), target);
+    cout << " Ans 2 is " << ans2 - v.begin() << endl;
 
     return 0;
 }
